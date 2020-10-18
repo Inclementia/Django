@@ -1,4 +1,12 @@
 from django.shortcuts import render
 
 def index(request):
-    pass
+    return render(request, 'main/index.html')
+
+
+def catalog(request):
+    return render(request, 'catalog/index.html')
+
+
+def basket(request):
+    return render(request, 'basket/index.html')
